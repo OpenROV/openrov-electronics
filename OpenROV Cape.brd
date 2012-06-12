@@ -787,27 +787,6 @@ type 0204, grid 7.5 mm</description>
 </package>
 </packages>
 </library>
-<library name="special">
-<packages>
-<package name="Q">
-<description>&lt;B&gt;CRYSTAL&lt;/B&gt;</description>
-<wire x1="5.08" y1="6.985" x2="-5.08" y2="6.985" width="0.1524" layer="21"/>
-<wire x1="5.715" y1="-6.35" x2="5.08" y2="-6.35" width="0.4064" layer="21"/>
-<wire x1="5.08" y1="-6.35" x2="5.08" y2="6.985" width="0.1524" layer="21"/>
-<wire x1="5.08" y1="-6.35" x2="2.54" y2="-6.35" width="0.4064" layer="21"/>
-<wire x1="-5.08" y1="-6.35" x2="-5.08" y2="6.985" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="-6.35" x2="-5.715" y2="-6.35" width="0.4064" layer="21"/>
-<wire x1="2.54" y1="-6.35" x2="2.54" y2="-6.985" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="-6.35" x2="-2.54" y2="-6.985" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="-6.35" x2="-2.54" y2="-6.35" width="0.4064" layer="21"/>
-<wire x1="-2.54" y1="-6.35" x2="-5.08" y2="-6.35" width="0.4064" layer="21"/>
-<pad name="1" x="-2.54" y="-7.62" drill="0.6096" shape="long" rot="R90"/>
-<pad name="2" x="2.54" y="-7.62" drill="0.6096" shape="long" rot="R90"/>
-<text x="-2.6162" y="1.1938" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-3.2512" y="-1.3462" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-</packages>
-</library>
 <library name="capacitor-wima">
 <packages>
 <package name="C2.5-3">
@@ -988,6 +967,17 @@ We've spent an enormous amount of time creating and checking these footprints an
 <text x="-15.24" y="0" size="0.6096" layer="25" ratio="10">&gt;NAME</text>
 <text x="-15.24" y="-1.27" size="0.6096" layer="27" ratio="10">&gt;VALUE</text>
 </package>
+<package name="HC49US">
+<description>&lt;B&gt;CRYSTAL&lt;/B&gt;</description>
+<wire x1="-3.429" y1="-2.286" x2="3.429" y2="-2.286" width="0.2032" layer="21"/>
+<wire x1="3.429" y1="2.286" x2="-3.429" y2="2.286" width="0.2032" layer="21"/>
+<wire x1="3.429" y1="2.286" x2="3.429" y2="-2.286" width="0.2032" layer="21" curve="-180"/>
+<wire x1="-3.429" y1="2.286" x2="-3.429" y2="-2.286" width="0.2032" layer="21" curve="180"/>
+<pad name="1" x="-2.54" y="0" drill="0.7" diameter="1.651" rot="R90"/>
+<pad name="2" x="2.54" y="0" drill="0.7" diameter="1.651" rot="R90"/>
+<text x="-5.08" y="-3.937" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-5.08" y="2.667" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+</package>
 </packages>
 </library>
 </libraries>
@@ -1149,9 +1139,8 @@ design rules under a new name.</description>
 <element name="U$23" library="microbuilder" package="MOUNTINGHOLE_3.0_PLATEDTHIN" value="MOUNTINGHOLE3.0THIN" x="80.05" y="6.32"/>
 <element name="R1" library="rcl" package="0204/7" value="" x="36.576" y="25.654" rot="R180"/>
 <element name="R2" library="rcl" package="0204/7" value="" x="36.576" y="22.098"/>
-<element name="Q1" library="special" package="Q" value="" x="47.879" y="19.304" rot="R180"/>
-<element name="C1" library="capacitor-wima" package="C2.5-3" value="" x="45.212" y="30.734" rot="R180"/>
-<element name="C2" library="capacitor-wima" package="C2.5-3" value="" x="50.8" y="30.734"/>
+<element name="C1" library="capacitor-wima" package="C2.5-3" value="" x="45.212" y="25.654" rot="R180"/>
+<element name="C2" library="capacitor-wima" package="C2.5-3" value="" x="50.8" y="25.654"/>
 <element name="D1" library="diode" package="DO41-10" value="1N4004" x="66.548" y="34.544" rot="R270"/>
 <element name="D2" library="diode" package="DO41-10" value="1N4004" x="69.85" y="22.352" rot="R90"/>
 <element name="R5" library="rcl" package="0204/7" value="" x="69.342" y="35.56" rot="R90"/>
@@ -1166,6 +1155,7 @@ design rules under a new name.</description>
 <element name="R6" library="rcl" package="0204/7" value="" x="36.83" y="31.75" rot="R180"/>
 <element name="T3" library="transistor" package="TO18" value="2N2222" x="29.21" y="27.94" rot="R90"/>
 <element name="R7" library="rcl" package="0204/7" value="" x="36.83" y="29.21" rot="R180"/>
+<element name="Y1" library="SparkFun" package="HC49US" value="16Mhz" x="48.006" y="30.226" rot="R180"/>
 </elements>
 <signals>
 <signal name="N$46">
@@ -1212,10 +1202,10 @@ design rules under a new name.</description>
 <contactref element="U$2" pad="1"/>
 <contactref element="T3" pad="1"/>
 <wire x1="66.802" y1="23.368" x2="75.438" y2="24.892" width="0" layer="19" extent="1-1"/>
-<wire x1="52.07" y1="30.734" x2="66.802" y2="23.368" width="0" layer="19" extent="1-1"/>
+<wire x1="52.07" y1="25.654" x2="66.802" y2="23.368" width="0" layer="19" extent="1-1"/>
 <wire x1="72.39" y1="4.445" x2="66.802" y2="23.368" width="0" layer="19" extent="1-1"/>
-<wire x1="40.386" y1="25.654" x2="52.07" y2="30.734" width="0" layer="19" extent="1-1"/>
-<wire x1="43.942" y1="30.734" x2="40.386" y2="25.654" width="0" layer="19" extent="1-1"/>
+<wire x1="40.386" y1="25.654" x2="52.07" y2="25.654" width="0" layer="19" extent="1-1"/>
+<wire x1="43.942" y1="25.654" x2="40.386" y2="25.654" width="0" layer="19" extent="1-1"/>
 <wire x1="22.352" y1="19.558" x2="40.386" y2="25.654" width="0" layer="19" extent="1-1"/>
 <wire x1="22.352" y1="29.464" x2="22.352" y2="19.558" width="0" layer="19" extent="1-1"/>
 <wire x1="22.352" y1="40.386" x2="22.352" y2="29.464" width="0" layer="19" extent="1-1"/>
@@ -1225,18 +1215,18 @@ design rules under a new name.</description>
 <wire x1="30.48" y1="26.67" x2="19.05" y2="1.905" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$24">
-<contactref element="Q1" pad="1"/>
 <contactref element="C2" pad="1"/>
 <contactref element="IC1" pad="10"/>
-<wire x1="49.53" y1="30.734" x2="49.53" y2="35.56" width="0" layer="19" extent="1-1"/>
-<wire x1="50.419" y1="26.924" x2="49.53" y2="30.734" width="0" layer="19" extent="1-1"/>
+<contactref element="Y1" pad="1"/>
+<wire x1="49.53" y1="25.654" x2="49.53" y2="35.56" width="0" layer="19" extent="1-1"/>
+<wire x1="50.546" y1="30.226" x2="49.53" y2="25.654" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$25">
-<contactref element="Q1" pad="2"/>
 <contactref element="C1" pad="1"/>
 <contactref element="IC1" pad="9"/>
-<wire x1="46.482" y1="30.734" x2="46.99" y2="35.56" width="0" layer="19" extent="1-1"/>
-<wire x1="45.339" y1="26.924" x2="46.482" y2="30.734" width="0" layer="19" extent="1-1"/>
+<contactref element="Y1" pad="2"/>
+<wire x1="46.482" y1="25.654" x2="46.99" y2="35.56" width="0" layer="19" extent="1-1"/>
+<wire x1="45.466" y1="30.226" x2="46.482" y2="25.654" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$71">
 <contactref element="D2" pad="C"/>
