@@ -138,7 +138,7 @@
 <text x="17.018" y="52.07" size="1.778" layer="21" rot="R90">2</text>
 <text x="76.708" y="2.286" size="1.778" layer="21">P9</text>
 <text x="76.708" y="50.8" size="1.778" layer="21">P8</text>
-<text x="84.582" y="11.811" size="1.778" layer="16" rot="R90">OpenROV Cape Rev 0.1</text>
+<text x="84.582" y="8.001" size="1.778" layer="1" rot="R90">OpenROV ArduSwimmer Rev 0</text>
 </plain>
 <libraries>
 <library name="microbuilder">
