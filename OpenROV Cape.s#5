@@ -7455,7 +7455,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="SUPPLY8" library="supply2" deviceset="GND" device=""/>
 <part name="D1" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="SMA"/>
 <part name="D2" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="SMA"/>
-<part name="R5" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES"/>
+<part name="R5" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="3.3k"/>
 <part name="C3" library="SparkFun-Passives" deviceset="CAP" device="0805"/>
 <part name="SUPPLY9" library="supply2" deviceset="GND" device=""/>
 <part name="D3" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="SMA"/>
@@ -7475,7 +7475,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="SUPPLY18" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY19" library="supply2" deviceset="GND" device=""/>
 <part name="IC1" library="SparkFun" deviceset="AVR-MEGA8-P" device="PTH" value="ATMEGA328P-PU"/>
-<part name="R6" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES"/>
+<part name="R6" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="10k"/>
 <part name="T3" library="SparkFun-DiscreteSemi" deviceset="TRANSISTOR_NPN" device="SOT23"/>
 <part name="SUPPLY20" library="supply2" deviceset="GND" device=""/>
 <part name="R7" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES"/>
@@ -7563,10 +7563,10 @@ We've spent an enormous amount of time creating and checking these footprints an
 <instance part="R1" gate="G$1" x="187.96" y="45.72" rot="R90"/>
 <instance part="R2" gate="G$1" x="193.04" y="53.34"/>
 <instance part="SUPPLY4" gate="GND" x="187.96" y="38.1"/>
-<instance part="C1" gate="G$1" x="55.88" y="71.12"/>
-<instance part="C2" gate="G$1" x="68.58" y="63.5"/>
-<instance part="SUPPLY7" gate="GND" x="68.58" y="58.42"/>
-<instance part="SUPPLY8" gate="GND" x="55.88" y="66.04"/>
+<instance part="C1" gate="G$1" x="71.12" y="76.2" rot="R270"/>
+<instance part="C2" gate="G$1" x="71.12" y="71.12" rot="R270"/>
+<instance part="SUPPLY7" gate="GND" x="68.58" y="68.58"/>
+<instance part="SUPPLY8" gate="GND" x="66.04" y="73.66"/>
 <instance part="D1" gate="G$1" x="149.86" y="198.12"/>
 <instance part="D2" gate="G$1" x="149.86" y="190.5"/>
 <instance part="R5" gate="G$1" x="167.64" y="190.5"/>
@@ -7597,7 +7597,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <instance part="SUPPLY20" gate="GND" x="68.58" y="91.44"/>
 <instance part="R7" gate="G$1" x="60.96" y="99.06"/>
 <instance part="SUPPLY21" gate="G$1" x="68.58" y="119.38"/>
-<instance part="Y1" gate="G$1" x="68.58" y="73.66" rot="R90"/>
+<instance part="Y1" gate="G$1" x="78.74" y="73.66" rot="R90"/>
 <instance part="JP1" gate="G$1" x="200.66" y="218.44"/>
 <instance part="JP2" gate="G$1" x="116.84" y="215.9"/>
 <instance part="Q1" gate="G$1" x="177.8" y="190.5"/>
@@ -7745,6 +7745,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
 <pinref part="SUPPLY8" gate="GND" pin="GND"/>
+<wire x1="68.58" y1="76.2" x2="66.04" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C3" gate="G$1" pin="2"/>
@@ -7874,18 +7875,18 @@ We've spent an enormous amount of time creating and checking these footprints an
 <segment>
 <pinref part="C2" gate="G$1" pin="1"/>
 <pinref part="IC1" gate="G$1" pin="PB7(XTAL2/TOSC2)"/>
-<wire x1="68.58" y1="71.12" x2="81.28" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="71.12" x2="81.28" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="Y1" gate="G$1" pin="1"/>
-<junction x="68.58" y="71.12"/>
-<wire x1="68.58" y1="71.12" x2="68.58" y2="68.58" width="0.1524" layer="91"/>
+<junction x="76.2" y="71.12"/>
+<wire x1="76.2" y1="71.12" x2="78.74" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$25" class="0">
 <segment>
-<wire x1="68.58" y1="76.2" x2="55.88" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="76.2" x2="76.2" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="1"/>
 <pinref part="IC1" gate="G$1" pin="PB6(XTAL1/TOSC1)"/>
-<wire x1="81.28" y1="76.2" x2="68.58" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="76.2" x2="78.74" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="Y1" gate="G$1" pin="2"/>
 </segment>
 </net>

@@ -7388,7 +7388,7 @@ DIN A3, landscape with location and doc. field</description>
 <part name="D1" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="SMA" value="1N4004"/>
 <part name="D2" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="SMA" value="1N4004"/>
 <part name="R5" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="3.3k"/>
-<part name="C3" library="SparkFun-Passives" deviceset="CAP" device="0805"/>
+<part name="C3" library="SparkFun-Passives" deviceset="CAP" device="0805" value="470uF"/>
 <part name="SUPPLY9" library="supply2" deviceset="GND" device=""/>
 <part name="D3" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="SMA"/>
 <part name="IC2" library="SparkFun-PowerIC" deviceset="V_REG_317" device="SMD" value=""/>

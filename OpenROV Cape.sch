@@ -7390,7 +7390,7 @@ DIN A3, landscape with location and doc. field</description>
 <part name="R5" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="3.3k"/>
 <part name="C3" library="SparkFun-Passives" deviceset="CAP" device="0805" value="470uF"/>
 <part name="SUPPLY9" library="supply2" deviceset="GND" device=""/>
-<part name="D3" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="SMA"/>
+<part name="D3" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="SMA" value="1N4004"/>
 <part name="IC2" library="SparkFun-PowerIC" deviceset="V_REG_317" device="SMD" value=""/>
 <part name="SUPPLY10" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY11" library="supply2" deviceset="+9V" device=""/>
@@ -7416,7 +7416,7 @@ DIN A3, landscape with location and doc. field</description>
 <part name="JP1" library="SparkFun" deviceset="M02" device="PTH"/>
 <part name="JP2" library="SparkFun" deviceset="M02" device="PTH"/>
 <part name="Q1" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCHANNEL" device="SMD"/>
-<part name="JP3" library="pinhead" deviceset="PINHD-1X3" device="" value="Camera ESC"/>
+<part name="JP3" library="pinhead" deviceset="PINHD-1X3" device="" value="Camera Servo"/>
 <part name="SUPPLY6" library="supply2" deviceset="VCC" device=""/>
 <part name="SUPPLY14" library="supply2" deviceset="GND" device=""/>
 <part name="R3" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="720"/>
@@ -7442,15 +7442,15 @@ DIN A3, landscape with location and doc. field</description>
 <part name="LED4" library="SparkFun-LED" deviceset="LED" device="1206" value="Yellow"/>
 <part name="SUPPLY27" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY28" library="supply2" deviceset="GND" device=""/>
-<part name="JP8" library="SparkFun" deviceset="M02" device="PTH"/>
+<part name="AUXOUT1" library="SparkFun" deviceset="M02" device="PTH"/>
 <part name="Q2" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCHANNEL" device="SMD"/>
 <part name="SUPPLY29" library="supply2" deviceset="+12V" device=""/>
-<part name="R12" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES"/>
+<part name="R12" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="3.3k"/>
 <part name="SUPPLY30" library="supply2" deviceset="GND" device=""/>
-<part name="JP9" library="SparkFun" deviceset="M02" device="PTH"/>
+<part name="AUXOUT2" library="SparkFun" deviceset="M02" device="PTH"/>
 <part name="SUPPLY31" library="supply2" deviceset="GND" device=""/>
 <part name="Q3" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCHANNEL" device="SMD"/>
-<part name="R13" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES"/>
+<part name="R13" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="3.3k"/>
 <part name="SUPPLY32" library="supply2" deviceset="+12V" device=""/>
 <part name="R14" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="22k"/>
 <part name="R15" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="15k"/>
@@ -7470,7 +7470,6 @@ DIN A3, landscape with location and doc. field</description>
 <text x="142.24" y="48.26" size="1.778" layer="91">Port ESC</text>
 <text x="142.24" y="45.72" size="1.778" layer="91">Vertical ESC</text>
 <text x="142.24" y="43.18" size="1.778" layer="91">Starbord ESC</text>
-<text x="50.8" y="99.06" size="1.778" layer="91" rot="R180">BB GPIO</text>
 <text x="200.66" y="228.6" size="1.778" layer="91">Backup battery</text>
 <text x="119.38" y="226.06" size="1.778" layer="91">12V In</text>
 <text x="195.58" y="185.42" size="1.778" layer="91">V_REG_317SMD</text>
@@ -7483,7 +7482,7 @@ DIN A3, landscape with location and doc. field</description>
 <instance part="U$11" gate="G$1" x="370.84" y="177.8"/>
 <instance part="U$12" gate="G$1" x="279.4" y="114.3"/>
 <instance part="U$13" gate="G$1" x="375.92" y="114.3"/>
-<instance part="U$14" gate="G$1" x="289.56" y="236.22"/>
+<instance part="U$14" gate="G$1" x="266.7" y="238.76"/>
 <instance part="U$15" gate="G$1" x="363.22" y="236.22"/>
 <instance part="U$3" gate="G$1" x="284.48" y="167.64"/>
 <instance part="U$4" gate="G$1" x="365.76" y="177.8"/>
@@ -7556,12 +7555,12 @@ DIN A3, landscape with location and doc. field</description>
 <instance part="LED4" gate="G$1" x="175.26" y="40.64"/>
 <instance part="SUPPLY27" gate="GND" x="175.26" y="33.02"/>
 <instance part="SUPPLY28" gate="GND" x="182.88" y="71.12"/>
-<instance part="JP8" gate="G$1" x="231.14" y="71.12"/>
+<instance part="AUXOUT1" gate="G$1" x="231.14" y="71.12"/>
 <instance part="Q2" gate="G$1" x="238.76" y="81.28"/>
 <instance part="SUPPLY29" gate="+12V" x="238.76" y="86.36"/>
 <instance part="R12" gate="G$1" x="226.06" y="81.28"/>
 <instance part="SUPPLY30" gate="GND" x="238.76" y="68.58"/>
-<instance part="JP9" gate="G$1" x="231.14" y="33.02"/>
+<instance part="AUXOUT2" gate="G$1" x="231.14" y="33.02"/>
 <instance part="SUPPLY31" gate="GND" x="238.76" y="30.48"/>
 <instance part="Q3" gate="G$1" x="238.76" y="43.18"/>
 <instance part="R13" gate="G$1" x="226.06" y="43.18"/>
@@ -7698,9 +7697,8 @@ DIN A3, landscape with location and doc. field</description>
 <pinref part="SUPPLY17" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<wire x1="302.26" y1="241.3" x2="289.56" y2="241.3" width="0.1524" layer="91"/>
 <pinref part="U$14" gate="G$1" pin="GND"/>
-<wire x1="289.56" y1="241.3" x2="289.56" y2="238.76" width="0.1524" layer="91"/>
+<wire x1="302.26" y1="241.3" x2="266.7" y2="241.3" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="T3" gate="G$1" pin="E"/>
@@ -7770,11 +7768,11 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="175.26" y1="73.66" x2="182.88" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP8" gate="G$1" pin="1"/>
+<pinref part="AUXOUT1" gate="G$1" pin="1"/>
 <pinref part="SUPPLY30" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="JP9" gate="G$1" pin="1"/>
+<pinref part="AUXOUT2" gate="G$1" pin="1"/>
 <pinref part="SUPPLY31" gate="GND" pin="GND"/>
 </segment>
 <segment>
@@ -7978,12 +7976,6 @@ DIN A3, landscape with location and doc. field</description>
 <pinref part="T3" gate="G$1" pin="B"/>
 <pinref part="R7" gate="G$1" pin="2"/>
 <wire x1="63.5" y1="99.06" x2="66.04" y2="99.06" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$6" class="0">
-<segment>
-<wire x1="55.88" y1="99.06" x2="50.8" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="R7" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="BBRX" class="0">
@@ -8218,7 +8210,7 @@ DIN A3, landscape with location and doc. field</description>
 </net>
 <net name="N$12" class="0">
 <segment>
-<pinref part="JP8" gate="G$1" pin="2"/>
+<pinref part="AUXOUT1" gate="G$1" pin="2"/>
 <pinref part="Q2" gate="G$1" pin="S"/>
 <wire x1="238.76" y1="73.66" x2="238.76" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="238.76" y1="73.66" x2="238.76" y2="76.2" width="0.1524" layer="91"/>
@@ -8232,7 +8224,7 @@ DIN A3, landscape with location and doc. field</description>
 </net>
 <net name="N$14" class="0">
 <segment>
-<pinref part="JP9" gate="G$1" pin="2"/>
+<pinref part="AUXOUT2" gate="G$1" pin="2"/>
 <pinref part="Q3" gate="G$1" pin="S"/>
 <wire x1="238.76" y1="35.56" x2="238.76" y2="38.1" width="0.1524" layer="91"/>
 </segment>
@@ -8393,6 +8385,18 @@ DIN A3, landscape with location and doc. field</description>
 <pinref part="U$2" gate="G$1" pin="UART1_TXD"/>
 <wire x1="355.6" y1="147.32" x2="365.76" y2="147.32" width="0.1524" layer="91"/>
 <label x="363.22" y="147.32" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ARDUINORESET" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="GPIO1_6"/>
+<wire x1="299.72" y1="238.76" x2="292.1" y2="238.76" width="0.1524" layer="91"/>
+<label x="276.86" y="238.76" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="55.88" y1="99.06" x2="50.8" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="R7" gate="G$1" pin="1"/>
+<label x="35.56" y="99.06" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
