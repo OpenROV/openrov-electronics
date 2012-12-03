@@ -1,0 +1,33 @@
+------------------------------------------------------------------------------------------
+Gerber File Extension Report For: ROV_CAPE3.GBR   10/16/2012  2:31:17 AM
+------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------
+Layer Extension     Layer Description                      
+------------------------------------------------------------------------------------------
+.GTL                Top Layer                               
+.GP1                GND_PLANE                               
+.G1                 Signal 2                                
+.GBL                Bottom Layer                            
+.GPB                Bottom Pad Master                       
+.GPT                Top Pad Master                          
+.GTO                Top Overlay                             
+.GTP                Top Paste                               
+.GTS                Top Solder                              
+.GBS                Bottom Solder                           
+.GBP                Bottom Paste                            
+.GBO                Bottom Overlay                          
+.GM1                Mechanical 1                            
+.GM2                Mechanical 2                            
+.GM3                Mechanical 3                            
+.GM5                Mechanical 5                            
+.GM12               Mechanical 12                           
+.GM13               Mechanical 13                           
+.GM14               Mechanical 14                           
+.GM15               Mechanical 15                           
+.GM16               Mechanical 16                           
+.GKO                Keep-Out Layer                          
+.GD1                Drill Drawing                           
+.GG1                Drill Guide                             
+------------------------------------------------------------------------------------------
