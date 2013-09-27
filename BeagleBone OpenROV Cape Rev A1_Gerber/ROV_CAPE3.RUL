@@ -1,5 +1,0 @@
-DRC Rules Export File for PCB: C:\Users\a0270551\Documents\Dropbox\CircuitCo\Capes\ROV Cape\ROV_CAPE3.PcbDoc
-RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion|Scope=Board|Minimum=4.00
-RuleKind=Clearance|RuleName=Clearance|Scope=Board|Minimum=6.00
-RuleKind=ShortCircuit|RuleName=ShortCircuit|Scope=Board|Allowed=0
-RuleKind=Width|RuleName=Width_1|Scope=Board|Minimum=6.00
