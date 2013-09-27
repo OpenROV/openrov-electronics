@@ -1,14 +1,12 @@
 OpenROV-Electronics
 ===================
 
-Electronics for OpenROV.  Include schematics and other diagrams
+Electronics for OpenROV.  Include schematics, gerbers and other files + diagrams
 
 What
 ====
 
-We are working on a Beaglebone cape to host the necessary electronics for OpenROV.  Initially, it will include an Atmega328 (basically an Arduino - and programmed as such), a power protection circuit, and a few other power management features.
-
-We'd like to support the open-source community as best we can, but we'd also like to support industry.  Therefore, we are including both Eagle and Fritzing versions of the schematics.  We may also move into a web hosted version to allow realtime collaboration in-browser.
-
-
-
+For OpenROV v2.5 See the OpenROV Controller 2.5B
+  It is a all-in-one power and control board that has an Arduino based Atmega 2560 aboard. Tons of I/O, and is designed to fit both the BeagleBone Black and the original BeagleBone
+For OpenROV V2.3 and V2.4, see the BeagleBone Cape A1
+  It is a all-in one power and control board based around the Atmega 328. Currently retired
