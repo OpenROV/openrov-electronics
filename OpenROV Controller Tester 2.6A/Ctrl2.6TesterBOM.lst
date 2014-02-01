@@ -1,0 +1,40 @@
+eeschema (2013-05-31 BZR 4019)-stable  >> Creation date: 29/01/2014 11:41:33
+#Cmp ( order = Reference )
+| C1         .1uf        
+| C2         .1uf        
+| C3         .1uf        
+| C4         0.1uF       
+| C5         1uF         
+| P1         CONN_8X2    
+| P2         CONN_5      
+| R1         10k         
+| R2         10K         
+| R3         20K         
+| R4         10K         
+| R5         50k         
+| R6         10K         
+| R7         4.7K        
+| R8         4.7k        
+| U1         ADS7828     
+#End Cmp
+
+#Cmp ( order = Value )
+| 0.1uF        C4        
+| 1uF          C5        
+| .1uf         C1        
+| .1uf         C2        
+| .1uf         C3        
+| CONN_8X2     P1        
+| CONN_5       P2        
+| 4.7K         R7        
+| 4.7k         R8        
+| 10k          R1        
+| 10K          R2        
+| 10K          R4        
+| 10K          R6        
+| 20K          R3        
+| 50k          R5        
+| ADS7828      U1        
+#End Cmp
+
+#End List
