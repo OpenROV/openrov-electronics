@@ -1,0 +1,25 @@
+Screaming Circuits SMD component position file.
+Created by Centroid_ScreamingCircuits_smd.ulp 1.2.0.
+
+Centroid Data for pc board: "OpenROV Light Board 2.7A.brd" as of: 9/7/2014 11:35:16 PM
+Measurements are in inches. Comma delimited
+Only surface mount components included
+
+RefDes,Layer,LocationX,LocationY,Rotation
+C1,Top,0.700,1.012,0
+C2,Top,5.070,0.724,270
+C4,Top,5.608,0.407,180
+D1,Top,0.258,0.443,270
+F1,Top,5.479,0.395,90
+FID1,Top,1.004,0.728,180
+FID2,Top,4.606,0.984,0
+LED1,Top,0.394,0.866,0
+LED2,Top,1.457,0.197,180
+LED3,Top,5.354,0.866,180
+LED4,Top,4.291,0.197,0
+R1,Top,0.594,0.594,180
+R2,Top,5.088,0.969,270
+R3,Top,1.033,0.949,180
+R4,Top,5.373,0.425,90
+U1,Top,0.702,0.860,270
+U2,Top,4.889,0.887,90
