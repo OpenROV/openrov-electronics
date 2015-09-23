@@ -1,0 +1,22 @@
+Screaming Circuits SMD component position file.
+Created by Centroid_ScreamingCircuits_smd.ulp 1.2.0.
+
+Centroid Data for pc board: "BNO055+MS5838BoB.v02.brd" as of: 5/20/2015 8:49:31 PM
+Measurements are in inches. Comma delimited
+Only surface mount components included
+
+RefDes,Layer,LocationX,LocationY,Rotation
+C1,Top,0.607,0.333,0
+C2,Top,0.759,0.201,0
+C3,Top,0.305,0.201,270
+C4,Top,0.503,0.060,180
+C5,Top,0.759,0.319,180
+C6,Top,0.603,0.060,0
+FID1,Top,0.385,0.341,0
+FID2,Top,0.693,0.101,0
+R1,Top,0.497,0.333,180
+R2,Top,0.759,0.261,0
+R3,Top,0.759,0.141,180
+R5,Top,0.759,0.081,180
+U1,Top,0.543,0.201,180
+U2,Top,0.199,0.201,0
