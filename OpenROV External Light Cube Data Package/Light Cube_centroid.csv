@@ -1,0 +1,25 @@
+Screaming Circuits SMD component position file.
+Created by Centroid_ScreamingCircuits_smd.ulp 1.2.0.
+
+Centroid Data for pc board: "Light Cube.brd" as of: 5/19/2015 10:11:51 PM
+Measurements are in inches. Comma delimited
+Only surface mount components included
+
+RefDes,Layer,LocationX,LocationY,Rotation
+C1,Top,0.246,0.416,180
+C2,Top,0.458,0.088,270
+D1,Top,0.389,0.492,180
+D2,Top,0.477,0.217,180
+D3,Top,0.452,0.379,0
+FB1,Top,0.240,0.485,0
+GND,Top,0.075,0.313,0
+L1,Top,0.290,0.130,0
+LED1,Bottom,0.293,0.271,270
+Q1,Top,0.087,0.121,180
+R1,Top,0.438,0.325,180
+R2,Top,0.354,0.344,270
+R3,Top,0.300,0.325,90
+R4,Top,0.411,0.436,0
+R5,Top,0.079,0.221,0
+U1,Top,0.213,0.315,180
+V+,Top,0.104,0.451,0
